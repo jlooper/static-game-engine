@@ -12,7 +12,7 @@ Microsoft Azure Advocates have been creating fun text-based games to encourage s
 
 ## Architecture
 
-This site is a hybrid of a Vue.js Single Page Web App and a VuePress static site. Most written content is written using VuePress's markdown architecture, and the game elements are build as standard Vue.js app elements. The game is contained in the [`app`](./app) folder. The site is deployed on [Azure Static Web Apps](https://azure.microsoft.com/services/app-service/static/?WT.mc_id=gameengine-github-jelooper#overview).
+This site is a hybrid of a Vue.js Single Page Web App and a VuePress static site. Most written content is written using VuePress's markdown architecture, and the game elements are build as standard Vue.js app elements. The game is contained in the [`app`](./app) folder. The site is deployed on [Azure Static Web Apps](https://azure.microsoft.com/services/app-service/static/?WT.mc_id=academic-0000-jelooper#overview).
 
 Create new pages of your Mystery Adventure game by adding Markdown files in the [`app/game/.vuepress`](./app/game/.vuepress) folder. Currently there are three narrative files (README.md, 1.md and 2.md). You can make your game trickier by renaming these files with unique words or a unique id, to that people won't be able to guess the next step by its url without solving a challenge. If you do, don't forget to change the Page url where the user clicks to get to the next page.
 
@@ -44,4 +44,4 @@ Build the site locally:
 
 You can deploy this site to your own Static Web App:
 
-[![Deploy to Azure button](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/?feature.customportal=false&WT.mc_id=gameengine-github-jelooper#create/Microsoft.StaticApp)
+[![Deploy to Azure button](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/?feature.customportal=false&WT.mc_id=academic-0000-jelooper#create/Microsoft.StaticApp)
