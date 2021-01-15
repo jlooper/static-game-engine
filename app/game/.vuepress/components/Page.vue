@@ -1,7 +1,8 @@
 <template>
-  <div class="prompt">
+
+<div class="pt-10 text-2xl">
     <span class="font-bold" v-if="show">{{ instructions }}</span>
-    <div class="page-nav" v-if="show">
+    <div class="text-underline block cursor-pointer" v-if="show">
       <router-link :to="link || './'">{{ action }}</router-link>
     </div>
   </div>
@@ -35,13 +36,10 @@ export default {
     this.getInventory(1);
 
     emitter.on("item_added", (id) => {
-      console.log(id);
       this.getInventory(id);
     });
 
     emitter.on("showResult", (id) => {
-      console.log("show results");
-      console.log(id);
       this.getInventory(id);
     });
   },
@@ -50,17 +48,3 @@ export default {
   },
 };
 </script>
-<style lang="stylus">
-.prompt {
-  padding-top: 10px;
-  font-size: 28px;
-}
-
-.page-nav {
-  font-weight: bold;
-  padding-top: 10px;
-  text-decoration: underline;
-  display: block;
-  cursor: pointer;
-}
-</style>
