@@ -8,7 +8,7 @@
 	},
 	{
 		"id": 2,
-		"instructions": "Ignore the, key and instead pick up an interesting",
+		"instructions": "Ignore the key and instead pick up an interesting",
 		"name": "meteorite",
 		"initialHide": true,
 		"result": "That's not super helpful. Now what?"
